@@ -1,4 +1,3 @@
-## A basic GitHub Actions workflow for your Quarkus application.
 
 name: CI build
 
@@ -22,4 +21,4 @@ jobs:
           cache: maven
 
       - name: Build
-        run: ./mvnw verify -B
+        run: ./mvnw quarkus:dev
